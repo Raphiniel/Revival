@@ -1,0 +1,199 @@
+* {
+    /* margin: 0; */
+    padding: 0;
+    box-sizing: 0;
+    color:rgb(255, 255, 255);
+    /* background-color: rgb(107, 247, 163); */
+    font-size: 20px;
+}
+nav {
+    border: solid 1px ;
+    border-radius: 10px;
+    margin: 2px;
+    height: 180px;
+    background-image: url(download\ \(1\).jpeg);
+    background-size: cover;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 30px;
+    margin: 2px;
+}
+
+nav ul li a:hover{
+    color: purple;
+    font-size: 35px;
+    transition: 1s;
+    text-decoration: underline 5px red;
+}
+
+.container {
+    display: flex;
+    height: 700px;
+    /* background-image: url(ocean-3605547_640.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+body {
+    background-image: url(IMG_0739.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.leftContainer {
+    height: calc(100%-(100px+100px));
+    width: 48%;
+    border: solid 2px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow:10px 10px 30px rgba(0,0,0,0.1);
+}
+
+.leftContainer:hover{
+    height: 500px;
+    width: 50%;
+    transition: 1s;
+    color: red;
+    cursor: pointer;
+}
+
+.rightContainer {
+    height: calc(100%-(100px+100px));
+    width: 48%;
+    border: solid 2px;
+    border-radius:5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: black 5px 5px 5px 5px;
+}
+
+.rightContainer:hover{
+    height: 500px;
+    width: 50%;
+    transition: 1s;
+    color: red;
+    cursor: pointer;
+}
+
+footer {
+    height: 150px;
+    width: 100%;
+    border: solid 2px;
+    margin: 2px;
+    border-radius: 10px;
+    background-image: url(download\ \(1\).jpeg);
+    background-size: cover;
+}
+
+p{
+    margin-left: 2px;
+    margin-right: 2px;
+    font-size: 20px;
+}
+
+h1 {
+    margin: 2px;
+    text-decoration: underline;
+    font-size: 25px;
+    text-align: center;
+}
+
+.galleryDisplay{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.leftDisplay {
+    width: 50%;
+    margin: 5px;
+    border: solid;
+    border-radius: 5px;
+}
+
+.rightDisplay {
+    width: 50%;
+    border: solid;
+    margin: 5px;
+    border-radius: 5px;
+    background-image: url(download\ \(3\).jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+@media (max-width:500px){
+    *{
+        font-size: 15px;
+        color: red;
+    }
+
+    nav{
+        display: inline;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    .container {
+        display: flex;
+        height: 450px;
+    }
+
+    .leftContainer {
+        width: 50%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .leftContainer:hover{
+        height: 300px;
+    }
+
+    .rightContainer{
+        width: 50%;
+        height: auto;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .rightContainer:hover{
+        height: 300px;
+        transition: 0.7s;
+    }
+    marquee {
+        img{
+            height: 200px;
+        }
+    }
+    .leftDisplay{
+        height: 450px;
+        width: 50%;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .rightDisplay{
+        height: 450px;
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+<div class="galleryItems">
+    <br>
+    <hr>
+    <h1>Gallery</h1>
+    <hr>
+    {% for items in description %}
+    <div class="galleryDisplay">
+        <div class="leftDisplay">
+            <img src="{{items.image.url}}" width="100%" height="650px" alt="">
+        </div>
+        <div class="rightDisplay">
+            <h3>{{items.content}}</h3>
+        </div>
+    </div>
+    <hr>
+    {% endfor %}
+</div>
+{% endblock %}

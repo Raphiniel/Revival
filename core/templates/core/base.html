@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revival | {% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="shortcut icon" href="{% static 'download (7).jpeg' %}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Raphiniel</a></li>
+            <li><a href="#">Contact Me</a></li>
+            <li><img witdh="80px" height="80px" src="{% static 'download (6).jpeg' %}" alt=""></li>
+            <li><a href="{% url 'gallery' %}">Gallery</a></li>
+            <li><a href="#">Socials</a></li>
+        </ul>
+    </nav>
+    <br>
+    <marquee scrollamount="2" behavior="alternate" direction="right">
+        <img height="400px" src="{% static 'IMG_0739.JPG' %}" alt="">
+        <img height="400px" src="{% static 'download (6).jpeg' %}" alt="">
+        <img height="400px" src="{% static 'IMG_E1156.JPG' %}" alt="">
+    </marquee>
+    {% block content %}
+    {% endblock %}
+</body>
+<footer>
+    <div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+    </div>
+</footer>
+</html>
